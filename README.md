@@ -13,6 +13,15 @@
 ## 技术栈
 Python | Streamlit | DeepSeek LLM API | python-dotenv | Git
 
+迭代计划（Roadmap）
+- 接入 RAG：向量库 + BM25 混合检索，支持私有文档知识库问答
+
+- 实现 Agent 工具调用能力
+
+- 存储迁移至 SQLite，替代本地 JSON 文件
+
+- 增加日志、异常捕获、参数可调面板
+
 ## 目录说明
 ai_partner/
 ├── assets/            # 静态资源
@@ -37,18 +46,6 @@ pip install -r requirements.txt
 2,复制。env.example 文件并命名为 .env，并填写对应的密钥。
 3,启动项目
 streamlit run main.py
-
-迭代计划（Roadmap）
- 
-- 接入 RAG：向量库 + BM25 混合检索，支持私有文档知识库问答
-
-- 实现 Agent 工具调用能力
-
-- 存储迁移至 SQLite，替代本地 JSON 文件
-
-- 增加日志、异常捕获、参数可调面板
-
-
 ## 三、requirements.txt（配套，直接复制）
 根目录新建 `requirements.txt`
 ```txt
